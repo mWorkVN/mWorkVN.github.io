@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Configuration
+title: MayPhay
 nav_order: 2
 ---
 

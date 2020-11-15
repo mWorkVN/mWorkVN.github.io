@@ -1,6 +1,8 @@
 ---
 layout: default
 title: MayPhay
+parent: Mach3
+grand_parent: Projects
 nav_order: 4
 ---
 

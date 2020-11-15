@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Customization
+title: Information
 nav_order: 6
 ---

@@ -20,7 +20,7 @@ url: "https://mWorkVN.github.io" # the base hostname & protocol for your site, e
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
-, "docs/tests/", "docs/nhan/"
+, "docs/tests/"
 ]
 remote_theme: pmarsceill/just-the-docs
 # Regression tests

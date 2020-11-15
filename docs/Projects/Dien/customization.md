@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Customization
+parent: Dien
+grand_parent: Projects
 nav_order: 6
 ---
 

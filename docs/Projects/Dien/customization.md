@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Customization
+title: 56
 parent: Dien
 grand_parent: Projects
-nav_order: 6
+nav_order: 7
 ---
 
 # Customization

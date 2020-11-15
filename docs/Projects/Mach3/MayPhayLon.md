@@ -3,7 +3,7 @@ layout: default
 title: MayPhay
 parent: Mach3
 grand_parent: Projects
-nav_order: 4
+nav_order: 8
 ---
 
 # Configuration

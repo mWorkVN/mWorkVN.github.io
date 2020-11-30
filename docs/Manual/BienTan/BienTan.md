@@ -7,4 +7,6 @@ has_children: true
 permalink: docs/Manual/BienTan
 ---
 
-1. [Yaskawa G7](manual\BienTan\YaskawaG7.pdf)
+1. [Yaskawa G7](/manual/BienTan/YaskawaG7.pdf)
+
+<embed src="/manual/BienTan/YaskawaG7.pdf" width="800px" height="2100px" />

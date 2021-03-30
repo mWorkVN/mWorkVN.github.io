@@ -1,22 +1,55 @@
----
-layout: default
-title: Tests
-has_children: true
-nav_order: 100
----
+<?php
+/**
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package ThemeGrill
+ * @subpackage eStore
+ * @since eStore 0.1
+ */
 
-# Tests
+get_header();
 
- The main documentation pages of this theme illustrate the use of many of its features, which to some extent tests their implementation. The pages linked below provide further test cases for particular features, and may be useful for regression testing when developing new features.
- 
-The default configuration does not include the test pages. To include them, *commment-out* the following line in `_config.yml`:
+	do_action( 'estore_before_body_content' );
 
-```yaml
-, "docs/tests/"
-```
-so that it is:
-```yaml
-# , "docs/tests/"
-```
+	$estore_layout = estore_layout_class();
+	?>
+	<div id="content" class="site-content"><!-- #content.site-content -->
+		<div class="page-header clearfix">
+			<div class="tg-container">
+				<?php estore_entry_title(); ?>
+				<h3 class="entry-sub-title"><?php estore_breadcrumbs(); ?></h3>
+			</div>
+		</div>
+		<main id="main" class="clearfix <?php echo esc_attr($estore_layout); ?>">
+			<div class="tg-container">
+				<div id="primary">
+					<?php
+					while ( have_posts() ) : the_post(); ?>
 
-(Apparently Jekyll's `include` does *not* override `exclude`  for the same folder...)
+						<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+						<?php
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
+
+						get_template_part('navigation', 'none');
+
+					endwhile; // End of the loop. ?>
+				</div> <!-- Primary end -->
+					<?php estore_sidebar_select(); ?>
+			</div>
+		</main>
+	</div>
+
+	<?php do_action( 'estore_after_body_content' ); ?>
+
+<?php get_footer(); ?>

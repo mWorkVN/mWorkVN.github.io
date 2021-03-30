@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+  <MachineList>
+    <Chinese>
+      <stepper >
+        <步进伺服_开环 FileName="SetpperOpenParameterConfig_CH.xml" />
+        <步进伺服_闭环 FileName="SetpperCloseParameterConfig_CH.xml" />
+      </stepper>
+   </Chinese>
+   <English>
+      <stepper path="">
+        <StepperServo_Open FileName="SetpperOpenParameterConfig_EH.xml" />
+        <stepperServo_Close FileName="SetpperCloseParameterConfig_EH.xml" />
+      </stepper>
+   </English>
+  </MachineList>
+</Config>
